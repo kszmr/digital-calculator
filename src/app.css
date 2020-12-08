@@ -1,0 +1,75 @@
+.screen {
+    display: grid;
+    grid-template-rows: 10fr 80fr 10fr;
+    grid-template-columns: 35fr 30fr 35fr;
+    background: rgb(121,109,255);
+    background: radial-gradient(circle, rgba(121,109,255,1) 0%, rgba(25,4,253,1) 100%);
+    height: 100vh;
+}
+
+.calculator {
+    grid-column: 2;
+    grid-row: 2;
+    width: 25em;
+    height: 38em;
+    border-radius: 50px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(200,200,200,1) 100%);
+    -webkit-box-shadow: -10px 10px 34px 0px #1904fd;
+    -moz-box-shadow: -10px 10px 34px 0px #1904fd;
+    box-shadow: -10px 10px 34px 0px #1904fd;
+    padding: 1em;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.button {
+    display: grid;
+    margin: 1em;
+    background-color: #9e9e9e;
+    font-family: 'Gugi', cursive;
+    font-weight: 800;
+    color: #111;
+    place-items: center;
+    width: 4.5em;
+    height: 4.5em;
+    box-shadow: inset 0.5em 0.5em rgb(121, 121, 121);
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.button:active {
+    box-shadow: inset 0.1em 0.1em #666;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'VT323', monospace;    
+    font-size: 32px;
+    color: #25bb00;
+    background-image: url(./img/noise.jpg);
+    text-shadow: 1px 1px 2px #1b8800;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    border: 3px solid #0e130a;
+    border-radius: 5px;
+}
+
+.disabled {
+    background-color: #d55140;
+    box-shadow: inset 0.5em 0.5em #9D3123;
+
+}
+
+.disabled:active {
+    box-shadow: inset 0.1em 0.1em #9D3123;
+}
